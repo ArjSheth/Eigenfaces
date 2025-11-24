@@ -122,11 +122,4 @@ np.save('PCA_FR/SingVals.npy',S)
 np.save('PCA_FR/V_mtx_from_USV.npy', V)
 
 print("Saved mean face, and Eigenfaces in separate files.")
-
-
-
-
-
-
-
 print("test saved")
