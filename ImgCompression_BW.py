@@ -4,7 +4,16 @@ import PIL.Image as img
 import numpy as np
 
 
-svd = svd1 # [np.linalg.svd, svd1]
+def svd2(A) :
+    u,s,v = np.linalg.svd(A)
+    S = np.zeros(shape = (len(s), len(s)), dtype=float)
+    for i in range(len(s)) :
+        S[i,i] = s[i]
+    return u,S,v
+svd = svd2 # choose between svd1, svd2
+
+
+
 
 check = 0
 src = "/home/arjun/Pictures/Collect_Faces/9332898.3.jpg"
