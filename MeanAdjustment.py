@@ -5,7 +5,7 @@ def addLists(L1,L2) :
         L1[i] += L2[i]
     return L1
 
-def ColumnMean(A : np.array) :
+def ColumnMean(A : np.ndarray) :
     At = (A.T).copy()
     myvec = [0 for j in range(len(At[0]))]
     for cols in At :
@@ -15,7 +15,7 @@ def ColumnMean(A : np.array) :
         item = item/n
     return myvec
 
-def ColumnMeanCentering(A : np.array) : 
+def ColumnMeanCentering(A : np.ndarray) : 
     m,n = np.shape(A)
     avgcol = list(ColumnMean(A)) # as a row
     B = np.array([avgcol for k in range(n)])
