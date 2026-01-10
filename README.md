@@ -1,1 +1,2 @@
 # Eigenfaces
+Implementation of some code which came out of a college course on Numerical Algorithms and Optimization. This project features a PCA-driven facial recognition algorithm, which decomposes a face into its components along significant "eigenfaces". This process has dimensionality reduction built in, which makes it easy for computation. On the other hand, it is extremely sensitive to image lighting, face angles, and background, making the "recognition"/"validation" part of the software difficult to make.
